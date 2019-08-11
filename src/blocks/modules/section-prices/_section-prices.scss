@@ -1,0 +1,105 @@
+.catalog {
+  &__item {
+    width: 50%;
+    @media screen and (max-width:$mobile-xl){
+      width: 100%;
+    }
+    @media screen and (min-width: $tablet + 1) {
+      &:hover {
+        .catalog__item-title {
+          color: $color-constrast;
+        }
+        .catalog__item-text {
+          color: $color-title-base;
+        }
+      }
+    }
+    &-wrap {
+      position: relative;
+    }
+    &-img {
+      @media screen and (max-width:$laptop-s) {
+        width: 200px;
+      }
+      @media screen and (max-width:$tablet) {
+        width: 150px;
+      }
+      @media screen and (max-width:$mobile-s){
+        width: 140px;
+      }
+      @media screen and (max-width:$mobile-xs){
+        width: 120px;
+      }
+      img {
+        display: block;
+      }
+    }
+    &-content {
+      padding-left: 40px;
+      @media screen and (max-width:$laptop-s){
+        padding-left: 30px;
+      }
+      @media screen and (max-width:$tablet) {
+        padding-left: 20px;
+      }
+    }
+    &-title {
+      font-size: 18px;
+      color: $color-title-base;
+      margin-bottom: 20px;
+      font-family: $font-family-extra;
+      font-weight: 800;
+      transition: 0.3s;
+      @media screen and (max-width:$laptop-s){
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+      @media screen and (max-width:$tablet) {
+        margin-bottom: 8px;
+      }
+      @media screen and (max-width:$mobile-s){
+        margin-bottom: 6px;
+        font-size: 15px;
+      }
+    }
+    &-text {
+      line-height: $line-height-text;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      @media screen and (max-width:$laptop-s){
+        margin-bottom: 15px;
+      }
+      @media screen and (max-width:$tablet) {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: $line-height-text-t;
+      }
+      @media screen and (max-width:$mobile-s){
+        line-height: 1.25;
+        margin-bottom: 8px;
+      }
+    }
+    &-price {
+      font-size: 16px;
+      color: $color-constrast;
+      font-family: $font-family-extra;
+      font-weight: 800;
+      text-transform: uppercase;
+      @media screen and (max-width:$tablet) {
+        font-size: 15px;
+      }
+      @media screen and (max-width:$mobile-s){
+        font-size: 14px;
+      }
+    }
+    &-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 2;
+    }
+  }
+}

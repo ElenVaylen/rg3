@@ -1,0 +1,26 @@
+section.section-prices.section
+  ._container.container
+    h2.section-title Цены
+    p.section-desc Повседневная практика показывает, что реализация намеченных плановых заданий играет<br> важную роль в формировании дальнейших направлений развития.
+  ._tabs.tabs
+    .tabs-titles
+      ._container
+        .tabs-titles__row.flex.justify-content-center
+          a(href="#finished-goods").tabs-titles__item.active Готовые изделия
+          a(href="#warehouse-materials").tabs-titles__item Складские материалы
+          a(href="#applied-materials").tabs-titles__item Прикладные материалы
+    .tabs-containers
+      ._container.container
+        .tabs-containers__wrap
+          .tabs-containers__item.active#finished-goods
+            include tabs-slider
+          .tabs-containers__item#warehouse-materials
+            include tabs-slider
+          .tabs-containers__item#applied-materials
+            include tabs-slider
+
+
+//- include ../../components/button/button
+
+      
+      

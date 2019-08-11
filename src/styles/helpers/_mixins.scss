@@ -1,0 +1,38 @@
+@mixin container {
+  max-width: $container-width;
+  @media screen and (max-width:$laptop-s){
+    max-width: $container-width-ls;
+  }
+  @media screen and (max-width:$tablet){
+    max-width: $container-width-t;
+  }
+  @media screen and (max-width:$mobile-xl){
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media screen and (max-width:$mobile-s){
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+@mixin row-p {
+  margin-left: -$col-width / 2;
+  margin-right: -$col-width / 2;
+  margin-bottom: -$col-width;
+  @media screen and (max-width:$tablet){
+    margin-left: -$col-width-t / 2;
+    margin-right: -$col-width-t / 2;
+    margin-bottom: -$col-width-t;
+  }
+}
+@mixin col-p {
+  padding-left: $col-width / 2;
+  padding-right: $col-width / 2;
+  margin-bottom: $col-width;
+  @media screen and (max-width:$tablet){
+    padding-left: $col-width-t / 2;
+    padding-right: $col-width-t / 2;
+    margin-bottom: $col-width-t;
+  }
+}

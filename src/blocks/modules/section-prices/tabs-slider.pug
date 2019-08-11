@@ -1,0 +1,26 @@
+- var numSlides = Math.ceil(catalog.length / 4);
+- var start = 0;
+- var end = 4;
+
+.tabs-slider
+  - for (var x = 0; x < numSlides; x++)
+    -if(x!=0)
+      - start = end;
+      - end = start + 4;
+    - if(x == (numSlides - 1))
+      - end = catalog.length;
+    .tabs-slider__item
+      .catalog__list.flex.row-p
+          each slide in catalog.slice(start,end)
+            .catalog__item.col-p(id = slide.id)
+              .catalog__item-wrap.flex.align-items-center
+                .catalog__item-img.col-auto
+                  img(src=slide.img, alt="")
+                .catalog__item-content.col
+                  h3.catalog__item-title= slide.title
+                  p.catalog__item-text= slide.text
+                  p.catalog__item-price
+                    span.catalog__item-price__val= slide.price
+                    | 
+                    span.catalog__item-price__curr= slide.currency
+                a.catalog__item-link(href="#")

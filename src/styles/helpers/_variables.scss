@@ -1,0 +1,39 @@
+// Custom colors
+$color-primary: #000;
+$color-white: #fff;
+$color-text-base: #acacb2;
+$color-title-base: #202023;
+$color-disabled: #9e9ea8;
+$color-constrast: #ff614b;
+$color-grey-light: #e7e7ec;
+
+$line-height-text: 1.7;
+$line-height-text-t: 1.4;
+
+$font-family: 'Open Sans', sans-serif;
+$font-family-extra: 'Montserrat', sans-serif;
+
+//Breakpoints max-width
+$laptop-xl: 1890px; //1440px
+$laptop-l: 1599px; //1440px
+$laptop-m: 1439px; //1366px
+$laptop-s: 1365px; //1280px
+$laptop-xs: 1279px; //1024px
+$tablet: 1023px; //768px
+$mobile-xl: 767px; //667px
+$mobile-l: 666px; //568px
+$mobile-m: 567px; //425px
+$mobile-s: 424px; //360px
+$mobile-xs: 359px; //320px
+
+// Fonts
+$base-font-size: 15px;
+$base-font-size-ls: 14px;
+
+//container
+$container-width: 1170px;
+$container-width-ls: 960px;
+$container-width-t: 700px;
+
+$col-width: 34px;
+$col-width-t: 24px;
